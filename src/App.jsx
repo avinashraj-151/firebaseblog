@@ -1,4 +1,18 @@
+import { Route, Routes } from "react-router-dom";
+import { Demo } from "./components/demo/Demo";
+import { Home } from "./components/Home/Home";
+import Homeheader from "./components/Home/Navbar.jsx";
+import Demoheader from "./components/demo/Navbar.jsx";
 function App() {
-  return <div className="text-red-500">App</div>;
+  const auth = false;
+  return (
+    <>
+      {auth == true ? <Homeheader></Homeheader> : <Demoheader></Demoheader>}
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/demo" element={<Demo />} />
+      </Routes>
+    </>
+  );
 }
 export default App;
