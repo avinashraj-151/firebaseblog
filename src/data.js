@@ -4,10 +4,6 @@ export const nav = [
     path: "/",
   },
   {
-    title: "Membership",
-    path: "/",
-  },
-  {
     title: "Write",
     path: "/",
   },

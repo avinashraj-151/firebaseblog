@@ -7,7 +7,7 @@ function App() {
   const auth = false;
   return (
     <>
-      {auth == true ? <Homeheader></Homeheader> : <Demoheader></Demoheader>}
+      {auth ? <Homeheader></Homeheader> : <Demoheader></Demoheader>}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/demo" element={<Demo />} />
